@@ -1,4 +1,5 @@
 import re
+import sys
 
 route = '''
         30.16.4.0/23     *[static/5] 89w4d 02:42:02, tag 903
@@ -10,4 +11,8 @@ route = '''
         '''
 
 pattern = re.compile(r"\d+.*[^a-z]\/\d+")
-print pattern.findall(route)
+
+print (pattern.findall(route))
+
+
+print(sys.path)
